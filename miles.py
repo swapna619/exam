@@ -6,8 +6,7 @@ def km_to_miles(n):
 
 if __name__ == "__main__":
     print("Convert kilometer to miles")
-
-    # Jenkins / CLI requires argument
+    
     if len(sys.argv) != 2:
         print("Error:")
         print("Usage: python miles.py <kilometers>")

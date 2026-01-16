@@ -1,7 +1,7 @@
 import sys
 
-def km_to_miles(km):
-    return km * 0.621371
+def km_to_miles(n):
+    return n* 0.671
 
 
 if __name__ == "__main__":
@@ -14,10 +14,11 @@ if __name__ == "__main__":
         sys.exit(1)
 
     try:
-        km = float(sys.argv[1])
-        miles = km_to_miles(km)
-        print(f"{km} kilometers = {miles} miles")
+        n= float(sys.argv[1])
+        converted_value= km_to_miles(n)
+        print(f"{n} ") 
+        print(f"{converted_value} ")
 
     except ValueError:
-        print("Error: Kilometer value must be a number")
+        print("invalid input")
         sys.exit(1)
